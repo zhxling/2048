@@ -1,5 +1,5 @@
 // 获取屏幕可用宽度
-documentWidth=window.screen.availWidth;
+documentWidth=document.documentElement.clientWidth||document.body.clientWidth;
 girdContainerWidth=0.92*documentWidth;  //棋盘格的高和宽
 cellSideLength=0.18*documentWidth;      //单元格的高和宽
 cellSpace=0.04*documentWidth;           //单元格间距
