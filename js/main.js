@@ -109,6 +109,11 @@ document.addEventListener('touchend',function(event){
 
 // 初始化棋盘格的样式
 function prepareForMobile(){
+	if(documentWidth>500){
+		girdContainerWidth=500;
+		cellSpace=20;
+		cellSideLength=100;
+	}
 	$("#grid-container").css({
 		"width":girdContainerWidth-2*cellSpace+"px",
 		"height":girdContainerWidth-2*cellSpace+"px",
