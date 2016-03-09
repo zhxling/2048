@@ -13,6 +13,7 @@ $(document).ready(function(){
 	prepareForMobile();
     newgame();
     // 事件响应
+    alert(documentWidth);
 });
 $(document).keydown(function(event){
 	switch(event.keyCode){
