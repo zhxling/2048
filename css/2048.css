@@ -6,8 +6,21 @@ header{
 header h1{
 	margin: 0;
 	font-family: Arial;
-	font-size: 60px;
+	font-size: 40px;
 	font-weight: bold;
+}
+#score{
+	position: relative;
+	font-weight:bold;
+	color: #6a6868;
+}
+.addScore{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+
+	font-weight:bold;
+	color: #6a6868;
 }
 header #newgamebutton{
 	display: block;
@@ -25,7 +38,7 @@ header #newgamebutton:hover{
 	background-color: #9f8b77;
 }
 header p{
-    font-size: 26px;
+    font-size: 30px;
     margin: 10px auto;
 }
 #grid-container{
@@ -42,4 +55,55 @@ header p{
 	position: absolute;
 	text-align: center;
 	font-weight: bold;
+}
+
+/*游戏结束弹出层*/
+#game-over{
+	display: none;
+	position: absolute;
+	left: 0;
+	top: 0;
+
+	width: 100%;
+	height: 100%;
+
+	color: white;
+	text-align: center;
+
+	background-color: #000;
+	opacity: 0.9;
+	filter: alpha(opacity=90);
+
+	overflow: hidden;
+}
+
+.game-over-container{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 200px;
+	height: 300px;
+	margin-left: -100px;
+	margin-top: -150px;
+}
+#game-over h1{
+	font-size: 40px;
+	color: #0cb420;
+}
+.game-over-score{
+	font-size: 18px;
+}
+.game-over-maxBlock{
+	font-size: 24px;
+}
+#game-over button{
+	display: block;
+	padding: 10px 40px;
+	margin:50px auto 0;
+
+	border: none;
+	outline: none;
+	border-radius: 6px;
+	color: #000;
+	background-color: #5bc7f9;
 }

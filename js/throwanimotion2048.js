@@ -23,6 +23,17 @@ function showMoveAnimotion(fromX,fromY,toX,toY){
 }
 
 // 更新分数：
-function updateScore(){
+function updateScore(addScore){
 	$("#score").text(score);
+	addscoreAnimotion(addScore);
+}
+
+function addscoreAnimotion(addScore){
+	$("#score").append("<span class='addScore'></span>");
+	$(".addScore").text("+"+addScore);
+
+	$(".addScore").animate({
+		"font-size":"0px",
+		"top":"-80px",
+	},1000);
 }
